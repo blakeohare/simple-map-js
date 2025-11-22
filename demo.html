@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Map</title>
+        <script src="./dist/simplemap.min.js"></script>
+        
+        <script src="./pre-gen/simplemap-australia-new-zealand-low.js"></script>
+        <script src="./pre-gen/simplemap-europe-low.js"></script>
+        <script src="./pre-gen/simplemap-hawaii-low.js"></script>
+        <script src="./pre-gen/simplemap-iceland-low.js"></script>
+        <script src="./pre-gen/simplemap-japan-low.js"></script>
+
+        <script src="./demo-init.js"></script>
+        <script>
+            window.addEventListener('load', () => createDemoPage());
+        </script>
+        <style>
+            body { font-family: sans-serif; }
+            #map-host { text-align: center; }
+            #map-picker { text-align: center; }
+            #map-picker button { margin: 10px; }
+        </style>
+    </head>
+
+    <body>
+        <h1>SimpleMap.js</h1>
+        <div id="map-host"></div>
+        <div id="map-picker"></div>
+    </body>
+</html>
