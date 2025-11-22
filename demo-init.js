@@ -1,10 +1,12 @@
 const createDemoPage = () => {
     let mapLabelsById = {
+        'africa': "Africa",
         'australia-new-zealand': "Australia/NZ",
         'europe': "Europe",
         'hawaii': "Hawaii",
         'iceland': "Iceland",
         'japan': "Japan",
+        'us': "United States",
     };
 
     const oceanColor = 'rgb(85, 168, 240)';

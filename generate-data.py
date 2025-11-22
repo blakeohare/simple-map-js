@@ -335,7 +335,7 @@ def main(args):
         print("Configuration not found in configured-locations.json (case sensitive): '" + args[0] + "'")
         return
 
-    resolutions = ('HIGH', 'MED', 'LOW')
+    resolutions = ('HIGH', 'MED', 'LOW', 'VERY-LOW')
     resolution = args[1].upper()
     if resolution not in resolutions:
         print("Resolution must be one of " + ', '.join(resolutions))
@@ -345,13 +345,10 @@ def main(args):
         'HIGH': 1200,
         'MED': 800,
         'LOW': 400,
+        'VERY-LOW': 120,
     }.get(resolution.upper())
 
     pixel_height = pixel_width * 2
-
-    # TODO: remove this!
-    # pixel_width = int(pixel_width / 5)
-    # pixel_height = int(pixel_height / 5)
 
     west = configuration['nw'][1]
     north = configuration['nw'][0]
