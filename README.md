@@ -45,7 +45,7 @@ The `pre-gen` files encode a rectangular region and the map will only display th
 within that region regardless of aspect ratio of the canvas. This is a known bug.
 
 First add your region to the JSON file following the format of the existing regions:
-```json
+```
 {
     "locations": [
         ...
