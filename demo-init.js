@@ -7,6 +7,7 @@ const createDemoPage = () => {
         'iceland': "Iceland",
         'japan': "Japan",
         'us': "United States",
+        'world': "World",
     };
 
     const oceanColor = 'rgb(85, 168, 240)';
